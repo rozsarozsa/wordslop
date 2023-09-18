@@ -1,0 +1,431 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0ylyk1865yxs"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_1mrdd"]
+[ext_resource type="FontFile" uid="uid://cb1dnd7q4qnlp" path="res://fonts/Bubble Butts.ttf" id="1_sj8ml"]
+[ext_resource type="PackedScene" uid="uid://bu0jjwoc82dpn" path="res://label.tscn" id="3_4ktl5"]
+[ext_resource type="FontFile" uid="uid://kbh5v263yfbh" path="res://fonts/GnuUnifontFull-Pm9P.ttf" id="4_c8htp"]
+[ext_resource type="FontFile" uid="uid://d1qc4xt3pcysw" path="res://fonts/StarPerv.ttf" id="5_nhsev"]
+
+[sub_resource type="Theme" id="Theme_wtmer"]
+resource_local_to_scene = true
+default_font = ExtResource("4_c8htp")
+default_font_size = 96
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(0.537255, 1, 0, 1)
+Label/colors/font_shadow_color = Color(0.32549, 0.32549, 0.32549, 1)
+Label/constants/outline_size = 0
+Label/fonts/font = ExtResource("4_c8htp")
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1mrdd")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 720.0
+offset_bottom = 720.0
+
+[node name="InputBox" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -360.0
+offset_bottom = 360.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control/InputBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.168627, 0.168627, 0.168627, 1)
+
+[node name="Label" type="Label" parent="Control/InputBox/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -339.0
+offset_right = 50.0
+offset_bottom = 341.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_sj8ml")
+theme_override_font_sizes/font_size = 56
+horizontal_alignment = 1
+autowrap_mode = 1
+clip_text = true
+uppercase = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+offset_right = 596.0
+offset_bottom = 596.0
+
+[node name="GridContainer" type="GridContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 6
+
+[node name="00" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="01" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="02" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="03" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="04" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="05" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="10" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="11" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="12" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="13" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="14" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="15" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="20" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="21" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="22" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="23" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="24" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="25" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="30" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="31" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="32" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="33" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="34" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="35" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="40" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="41" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="42" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="43" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="44" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="45" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="50" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="51" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="52" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="53" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="54" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="55" type="ColorRect" parent="Control/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.917647, 0.756863, 0.603922, 1)
+
+[node name="messagebox" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -121.0
+offset_right = 596.0
+grow_vertical = 0
+color = Color(0, 0, 0, 1)
+
+[node name="Message" type="Label" parent="Control/messagebox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_c8htp")
+theme_override_font_sizes/font_size = 24
+
+[node name="Score" type="Label" parent="Control/messagebox"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_c8htp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="Level" type="Label" parent="Control/messagebox"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -52.0
+offset_right = -443.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_c8htp")
+theme_override_font_sizes/font_size = 24
+text = "Level "
+
+[node name="gameoverscreen" type="ColorRect" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Control/gameoverscreen"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 96
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="play again" type="Label" parent="Control/gameoverscreen"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 51.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 36
+text = "(press r to restart)"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="Control/gameoverscreen"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -67.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 48
+text = "score: "
+horizontal_alignment = 1
+
+[node name="titlescreen" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Control/titlescreen"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -241.0
+offset_right = 3.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.992157, 1, 0.996078, 1)
+theme_override_colors/font_shadow_color = Color(0.615686, 0.803922, 0.972549, 0.286275)
+theme_override_constants/shadow_outline_size = 30
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 96
+text = "ROZSA
+RUSSELL'S
+WORDSLOP"
+horizontal_alignment = 1
+
+[node name="play again" type="Label" parent="Control/titlescreen"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 51.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 36
+text = "(press s to start)"
+horizontal_alignment = 1
+
+[node name="tips" type="Label" parent="Control/titlescreen"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -243.0
+offset_right = 1.0
+offset_bottom = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_nhsev")
+theme_override_font_sizes/font_size = 24
+text = "* TYPE WORDS
+* PRESS ENTER TO SUBMIT
+* DON'T LET THEM STACK UP
+* PRESS TAB WHEN IN A PICKLE
+* SPEED INCREASES EVERY 2000 POINTS"
+horizontal_alignment = 1
+
+[node name="Label" parent="." instance=ExtResource("3_4ktl5")]
+offset_left = 16.0
+offset_top = 368.5
+offset_right = 70.0
+offset_bottom = 467.5
+theme = SubResource("Theme_wtmer")
